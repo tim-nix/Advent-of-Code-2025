@@ -1,4 +1,18 @@
-# 
+# Given a safe has a dial with only an arrow on it;
+# around the dial are the numbers 0 through 99 in
+# order. and an input of a sequence of rotations,
+# one per line, which tell you how to open the safe.
+# A rotation starts with an L or R which indicates
+# whether the rotation should be to the left (toward
+# lower numbers) or to the right (toward higher
+# numbers). Then, the rotation has a distance value
+# which indicates how many clicks the dial should be
+# rotated in that direction.
+#
+# The dial starts by pointing at 50.
+#
+# Calculate the number of times the dial is left
+# pointing at 0 after any rotation in the sequence.
 
 # Read in the data file and convert it to a list
 # of strings.

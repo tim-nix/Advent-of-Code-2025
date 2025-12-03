@@ -54,7 +54,7 @@ if __name__ == '__main__':
    rotations = parseInput(values)
 
    # The dial starts by pointing at 50
-   dial = 50
+   dial = 0
    
    # Iterate through the rotations. Adjust
    # the dial and count the number of times
@@ -62,17 +62,14 @@ if __name__ == '__main__':
    count = 0
    for direction, distance in rotations:
       if direction == 'R':
-         # Rotating to the right is simple
+         # Rotating to the right
          count += (dial + distance) // 100
          dial = (dial + distance) % 100
       else:
-         # Rotating to the less is tougher, so
-         # handle it one click at a time
-         while distance > 0:
-            dial = (dial - 1) % 100
-            distance -= 1
-            if dial == 0:
-               count += 1
+         # Rotating to the left
+         dial2 = (dial - distance) % 100
+         count += (dial2 + distance) // 100
+         dial = dial2
 
 
    # Display the number of times that '0'
