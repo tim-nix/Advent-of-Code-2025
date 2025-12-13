@@ -1,7 +1,7 @@
 # The program input consists of a list of devices
 # and their outputs. Starting at the device
 # labeled 'you', find the number of different
-# paths to the device labeled 'out' be following
+# paths to the device labeled 'out' by following
 # the output cable from each device to the next.
 #
 # How many different paths lead from 'you' to
